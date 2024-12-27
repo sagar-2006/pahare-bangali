@@ -1,0 +1,13 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const adventures = [
+    { title: "Tonglu Trekking Adventure", description: "Experience serene Himalayan beauty." },
+    { title: "Tumling Trekking Adventure", description: "Explore offbeat mountain trails." }
+  ];
+
+  const adventuresDiv = document.getElementById("adventures");
+  adventures.forEach(adventure => {
+    const div = document.createElement("div");
+    div.innerHTML = `<h3>${adventure.title}</h3><p>${adventure.description}</p>`;
+    adventuresDiv.appendChild(div);
+  });
+});
